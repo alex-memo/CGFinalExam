@@ -7,7 +7,7 @@ public class TurretSim : MonoBehaviour
 	[SerializeField] private Material vignetteMat;
 	[SerializeField] private Material energyMat;
 	private float energy = 1;
-	private float burnRate = 0.1f;
+	[SerializeField] private float burnRate = 0.2f;
 	private float lastFireTime = 0;
 	private void Awake()
 	{
