@@ -7,12 +7,11 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: MI_HealthBar
-  m_Shader: {fileID: -6465566751694194690, guid: d0b0819c06bbb4555844f7929058ece8, type: 3}
+  m_Name: MI_Crosshair
+  m_Shader: {fileID: -6465566751694194690, guid: ff7f80edd48b34e2d96757d1a1c5f542, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
-  m_ValidKeywords:
-  - _INVERT
+  m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -42,10 +41,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _CellDensity: 140.4
     - _ColorMask: 15
-    - _FillPercentage: 1
-    - _INVERT: 1
+    - _LineLength: 0.1
+    - _LineWidth: 0.07
+    - _ROUNDEDGE: 0
     - _Stencil: 0
     - _StencilComp: 8
     - _StencilOp: 0
@@ -54,9 +53,7 @@ Material:
     - _UIMaskSoftnessX: 1
     - _UIMaskSoftnessY: 1
     m_Colors:
-    - _BackgroundColour: {r: 0.1869681, g: 0.8301887, b: 0.1605553, a: 0}
     - _ClipRect: {r: 0, g: 0, b: 0, a: 0}
-    - _OverlayColour: {r: 0.2709533, g: 1, b: 0, a: 0}
-    - _VoronoiSpeed: {r: -0.001, g: -0.01, b: 0, a: 0}
+    - _Colour: {r: 0, g: 1, b: 0, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
