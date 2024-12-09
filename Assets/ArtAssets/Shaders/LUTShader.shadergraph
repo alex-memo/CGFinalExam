@@ -50,7 +50,23 @@
         }
     ],
     "m_GroupDatas": [],
-    "m_StickyNoteDatas": [],
+    "m_StickyNoteDatas": [
+        {
+            "m_Id": "1cc8fd6d1a3946ebbcc2cb421af9c5db"
+        },
+        {
+            "m_Id": "02fd394fd49640f6a555e379803e9707"
+        },
+        {
+            "m_Id": "ffa213c75e804ed7a5de3a6affa7cc8b"
+        },
+        {
+            "m_Id": "eb24f9ec8fe14f85a0bfb0c19855efa4"
+        },
+        {
+            "m_Id": "1f315a196f9a4ba3bb9232e7365f1a80"
+        }
+    ],
     "m_Edges": [
         {
             "m_OutputSlot": {
@@ -181,15 +197,15 @@
     ],
     "m_VertexContext": {
         "m_Position": {
-            "x": 1437.0001220703125,
-            "y": -312.5000305175781
+            "x": 1362.0,
+            "y": -417.0
         },
         "m_Blocks": []
     },
     "m_FragmentContext": {
         "m_Position": {
-            "x": 1437.0001220703125,
-            "y": -112.50000762939453
+            "x": 1362.0,
+            "y": -217.0
         },
         "m_Blocks": [
             {
@@ -241,6 +257,26 @@
     },
     "m_Labels": [],
     "m_Channel": 0
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "02fd394fd49640f6a555e379803e9707",
+    "m_Title": "Screen Colour",
+    "m_Content": "We get the current screen colour, this is everything that is being rendered on screen",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -87.5,
+        "y": -442.0,
+        "width": 200.0,
+        "height": 177.5
+    },
+    "m_Group": {
+        "m_Id": ""
+    }
 }
 
 {
@@ -314,6 +350,46 @@
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "1cc8fd6d1a3946ebbcc2cb421af9c5db",
+    "m_Title": "Screen Pos UV",
+    "m_Content": "We sample the screen position UV",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": -453.0,
+        "y": -439.0,
+        "width": 200.0,
+        "height": 177.5
+    },
+    "m_Group": {
+        "m_Id": ""
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "1f315a196f9a4ba3bb9232e7365f1a80",
+    "m_Title": "Output",
+    "m_Content": "We output the new colours, this is used as a full screen renderer feature",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": 1368.5,
+        "y": -79.0,
+        "width": 200.0,
+        "height": 172.0
+    },
+    "m_Group": {
+        "m_Id": ""
+    }
 }
 
 {
@@ -422,10 +498,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 318.5000305175781,
-            "y": -248.00001525878907,
+            "x": 312.5000305175781,
+            "y": -84.50000762939453,
             "width": 105.5,
-            "height": 34.0
+            "height": 34.00004196166992
         }
     },
     "m_Slots": [
@@ -679,9 +755,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 1025.0001220703125,
-            "y": -120.50001525878906,
-            "width": 207.9998779296875,
+            "x": 1008.5,
+            "y": -214.49996948242188,
+            "width": 208.0,
             "height": 326.0
         }
     },
@@ -877,10 +953,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 805.5,
-            "y": -18.9999942779541,
-            "width": 140.0,
-            "height": 34.0
+            "x": 855.0,
+            "y": -26.999984741210939,
+            "width": 140.0001220703125,
+            "height": 33.999969482421878
         }
     },
     "m_Slots": [
@@ -1033,10 +1109,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": 194.99993896484376,
-            "y": -177.00003051757813,
-            "width": 56.00004577636719,
-            "height": 24.000030517578126
+            "x": 409.0000305175781,
+            "y": -176.0,
+            "width": 55.999969482421878,
+            "height": 24.000015258789064
         }
     },
     "m_Slots": [
@@ -1191,5 +1267,45 @@
     "m_Value": 0.0,
     "m_DefaultValue": 0.0,
     "m_Labels": []
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "eb24f9ec8fe14f85a0bfb0c19855efa4",
+    "m_Title": "Recolouring",
+    "m_Content": "We use the contribution to lerp between the original colours on screen and the lut modified ones to give us more control on how much do we want the lut to affect the screen colours",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": 1013.5,
+        "y": -420.5,
+        "width": 200.0,
+        "height": 177.5
+    },
+    "m_Group": {
+        "m_Id": ""
+    }
+}
+
+{
+    "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.StickyNoteData",
+    "m_ObjectId": "ffa213c75e804ed7a5de3a6affa7cc8b",
+    "m_Title": "LUT ",
+    "m_Content": "We input our lut texture and sample it, we use a sample state to linear and clamp, this could be point if we wanted more precision but for this purpose linear will do for performance.\nWe use our screen colour as the UV",
+    "m_TextSize": 0,
+    "m_Theme": 0,
+    "m_Position": {
+        "serializedVersion": "2",
+        "x": 482.0,
+        "y": -363.0,
+        "width": 200.0,
+        "height": 177.5
+    },
+    "m_Group": {
+        "m_Id": ""
+    }
 }
 
